@@ -4,14 +4,14 @@
 
 
 <div id="dnnPortalSettings">
-	<div class="dnnFormExpandContent"><a href="#">ExpandAll</a></div>
+	<div class="dnnFormExpandContent" id="ExpandAll" runat="server"><a href="#">ExpandAll</a></div>
 	<div id="dnnEditPortalSettings">
 		<div class="dnnForm dnnSiteSettings dnnClear" >
 			<div class="ssbsContent dnnClear" >
 				<asp:PlaceHolder runat="server" ID="plHolder" ></asp:PlaceHolder>
 			</div>
 		</div>
-        <asp:PlaceHolder runat="server" ID="plResult" ></asp:PlaceHolder>
+		<asp:PlaceHolder runat="server" ID="plResult" ></asp:PlaceHolder>
 		<ul class="dnnActions dnnClear">
 			<li>
 				<asp:LinkButton id="cmdUpdate" OnClick="BtnSubmitClick" runat="server" CssClass="dnnPrimaryAction" resourcekey="cmdUpdate" />

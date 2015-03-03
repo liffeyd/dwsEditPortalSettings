@@ -108,6 +108,8 @@ namespace dws.Modules.EditPortalSettings
                 else if (currentUserInfo.IsInRole("Administrators"))
                 {
                     portals.Add(PortalController.Instance.GetPortal(base.PortalId));
+                    this.ExpandAll.Visible = false;
+
                 }
                 else
                 {
