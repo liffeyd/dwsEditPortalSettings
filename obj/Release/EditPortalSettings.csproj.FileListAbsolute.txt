@@ -1,0 +1,4 @@
+F:\DNN Sites\dnndev.me\bin\dws.Modules.EditPortalSettings.dll
+F:\DNN Sites\dnndev.me\bin\dws.Modules.EditPortalSettings.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\dwsEditPortalSettings\obj\Release\dws.Modules.EditPortalSettings.dll
+F:\DNN Sites\dnndev.me\DesktopModules\dwsEditPortalSettings\obj\Release\dws.Modules.EditPortalSettings.pdb

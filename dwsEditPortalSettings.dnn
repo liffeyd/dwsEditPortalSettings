@@ -1,0 +1,66 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="dwsEditPortalSettings" type="Module" version="00.00.01">
+      <friendlyName>Edit Portal Settings</friendlyName>
+      <description>dws.ie Edit Portal Settings module</description>
+      <iconFile>Images/icon_hostsettings_32px.gif</iconFile>
+      <owner>
+        <name>Declan Ward</name>
+        <organization>dws.ie</organization>
+        <url>http://www.dws.ie</url>
+        <email>support@dws.ie</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.03.04</dependency>
+      </dependencies>
+      
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/dwsEditPortalSettings</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Edit Portal Settings</moduleName>
+            <foldername>dwsEditPortalSettings</foldername>
+            <businessControllerClass></businessControllerClass>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Edit Portal Settings</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/dwsEditPortalSettings/PortalSettings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>dws.Modules.EditPortalSettings.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

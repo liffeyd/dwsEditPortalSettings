@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Portal Settings for Auto Delete Users</title>
+    <link rel="stylesheet" type="text/css" href="Documentation.css" />
+</head>
+<body>
+    <div>
+        <h1>Edit Portal Settings Module</h1>
+        <hr />
+        <h2>*** Note ***</h2>
+        <p>This module is only useful if the module DNN-DeleteUnauthorisedUsers has been installed by the host user.</p>
+        <p>The Edit Portal Settings module is designed to add portal settings to be used by a scheduled task. The Shedule Task is designed to optionally delete unauthorised users after a specified time period since registration. It is an attempt to help administrators in the fight against "spam user registrations". The idea is that the spam users tend to have invalid email addresses and, as a result, never verify their registration and thus do not become authorised. Genuine user registrations will tend to verify their account in the same session.</p>
+        <p>Four settings are used for each portal:
+        </p>
+        <ol>
+            <li>
+                <strong>AutoDeleteUsers</strong>
+            </li>
+            <li>
+                <strong>AutoDeleteUsersTimeSpan</strong>
+            </li>
+            <li>
+                <strong>AutoPurgeUsers</strong>
+            </li>
+            <li>
+                <strong>AutoPurgeUsersTimeSpan</strong>
+            </li>
+        </ol>
+
+        <h2>AutoDeleteUsers</h2>
+        <p>This is a true/false value indicating if users should be deleted when the scheduled taks runs.</p>
+        
+        <h2>AutoDeleteUsersTimeSpan</h2>
+        <p>This is a numeric valus indicating the number of <strong>minutes</strong> to elapse before a user will be deleted id AutoDeleteUsers is set to true.</p>
+        <p>A deleted user may be restored in DNN by following Users > Manage Users and selecting <strong>Deleted</strong> to list deleted users. Individual deleted users may be restored. If AutoPurgeUsers is set to true then deleted users can only be restored before they are removed from the database.</p>
+        
+        <h2>AutoPurgeUsers</h2>
+        <p>This is a true/false value indicating if users should be removed from the database when the scheduled taks runs.</p>
+        
+        <h2>AutoPurgeUsersTimeSpan</h2>
+        <p>This is a numeric valus indicating the number of <strong>days</strong> to elapse before a user will be removed from the database if AutoPurgeUsers is set to true. Once users are removed from the database they cannot be restored.</p>
+        
+        <h2>Usage</h2>
+        <p>The module will take into account the access level of the logged in user. Only administrators or host users can use this module.</p>
+        <p>Administrators will only see the portal settings for their own portal (website). A host user will see the portal settings for all portals sorted by portal ID.</p>
+        <br />
+        <p>The Schedule Task is a separate module.</p>
+        <hr />
+        <br />
+    </div>
+</body>
+</html>

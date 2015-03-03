@@ -1,0 +1,20 @@
+﻿<h3>Edit Portal Settings</h3>
+<p class="Contributor">
+	<a href="mailto:support@dws.ie">support@dws.ie</a><br />
+	<a href=http://www.dws.ie>http://www.dws.ie</a>
+</p>
+<hr/>
+<div class="License">
+	<h3>About Edit Portal Settings</h3>
+	<p class="Owner">
+		<b>Version 00.00.01</b>
+	</p>
+	<p>This module has a single purpose to insert and/or update 4 PortalSettings required by a scheduled task to delete and/or optionally purge Unauthorised users.</p>
+	<p>Unauthorised users can be deleted a specified time period after they have been registered. This is designed to help in the fight against Spam Registrations. It is reasonable to assume that if a user does not verify theiir email address within 60 minutes (default value) that they are not genuine.</p>
+	<p>An additional option is to purge (remove from the database) anu users flagged as deleted. The default timespan for purging deleted users is 7 days. This gives a site administrator the ability to un-delete and authorise any users that may have been deleted in error.</p> 
+	<h4>Bug Fixes</h4>
+	<ul>
+			<li>None</li>
+	</ul>
+
+</div>
