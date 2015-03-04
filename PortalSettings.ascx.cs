@@ -104,10 +104,12 @@ namespace dws.Modules.EditPortalSettings
                 {
                     // list portals by portal id
                     portals = PortalController.Instance.GetPortals().Cast<PortalInfo>().OrderBy(o => o.PortalID).ToList();
+                    this.ExpandAll.Visible = true;
                 }
                 else if (currentUserInfo.IsInRole("Administrators"))
                 {
                     portals.Add(PortalController.Instance.GetPortal(base.PortalId));
+                    
                 }
                 else
                 {

@@ -13,6 +13,15 @@ namespace dws.Modules.EditPortalSettings {
     public partial class View {
         
         /// <summary>
+        /// ExpandAll control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ExpandAll;
+        
+        /// <summary>
         /// plHolder control.
         /// </summary>
         /// <remarks>
