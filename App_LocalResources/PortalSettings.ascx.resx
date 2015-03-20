@@ -133,7 +133,7 @@
     <value>Time since a user registered before being deleted.</value>
   </data>
   <data name="lblAutoDeleteTimeSpan.Help" xml:space="preserve">
-    <value>This is the time span, in days, after which an unauthorised user will be deleted. If "Auto Delete Unauthorised Users" is checked above.</value>
+    <value>This is the time span, in minutes, after which an unauthorised user will be deleted. If "Auto Delete Unauthorised Users" is checked above.</value>
   </data>
   <data name="lblAutoDeleteUnauthorisedUsers.Help" xml:space="preserve">
     <value>Check this if you require unauthorised users to be deleted after they have been registered for the number of days specified below.</value>
